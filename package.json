@@ -1,0 +1,22 @@
+{
+  "name": "apache-pulsar-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon . --ignore 'messages.json'",
+    "download-cpp-client": "git clone https://github.com/apache/pulsar-client-node.git && pulsar-client-node/pkg/linux/download-cpp-client.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^7.8.2",
+    "express": "^4.18.2",
+    "pulsar-client": "^1.8.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.12.1"
+  }
+}

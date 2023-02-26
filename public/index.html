@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Node Apache Pulsar Example</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/streaming.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Node Apache Pulsar Example</h1>
+    </div>
+
+    <!-- wrap the following two divs in a flex row -->
+    <div class="charts-container" style="display: flex; flex-direction: row">
+      <div class="chart-container">
+        <canvas id="bar-chart"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="line-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="controls-container">
+      <!-- add a button that invokes sendEvents() function -->
+      <button onclick="sendEvents()">Send Dummy Events</button>
+
+      <div>
+        Last updated on:
+        <span id="timestamp"></span>
+      </div>
+    </div>
+
+    <script src="js/visualisation.js"></script>
+    <script src="js/socket.js"></script>
+  </body>
+</html>
